@@ -4,8 +4,8 @@ const keyCodeDiv= document.querySelector('.keyCode')
 
 window.addEventListener('keydown',(e)=> {
  displaykey.innerText = e.key;
- displaykeycode.innerText = e.keycode;
- if(e.keycode === 32){
-    displaykey.innerText `'space '` ;
+ displaykeycode.innerText = e.which;
+ if(e.which === 32){
+    displaykey.innerText = `'space '` ;
  }
 }) 
